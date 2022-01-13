@@ -1,11 +1,10 @@
 // Guessthenumber_game
 
-
 package com.company;
 import java.util.Random;
 import java.util.Scanner;
 
-class Game{
+class game{
     public int number;
     public int inputNumber;
     public int noOfGuesses = 0;
@@ -18,7 +17,7 @@ class Game{
         this.noOfGuesses = noOfGuesses;
     }
 
-    Game(){
+    game(){
         Random rand = new Random();
         this.number = rand.nextInt(100);
     }
@@ -43,15 +42,15 @@ class Game{
     }
 
 }
-public class cwh_50_ex3sol {
+public class Exercise3 {
     public static void main(String[] args) {
-        
 
-        Game g = new Game();
+
+        game g = new game();
         boolean b= false;
         while(!b){
-        g.takeUserInput();
-        b = g.isCorrectNumber();
+            g.takeUserInput();
+            b = g.isCorrectNumber();
         }
 
     }
